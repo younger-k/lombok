@@ -10,11 +10,15 @@ repositories {
 }
 
 dependencies {
-    compileOnly 'org.projectlombok:lombok:1.18.12'
-    annotationProcessor 'org.projectlombok:lombok:1.18.12'
+    // Jackson
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.12.4'
+
+    compileOnly 'org.projectlombok:lombok:1.18.14'
+    annotationProcessor 'org.projectlombok:lombok:1.18.14'
 
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    testImplementation 'com.fasterxml.jackson.core:jackson-databind:2.12.3'
 }
 
 test {
